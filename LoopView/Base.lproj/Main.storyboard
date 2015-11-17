@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="fkY-aO-3Wg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="fkY-aO-3Wg">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--第三种-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController title="第三种" id="BYZ-38-t0r" customClass="ThirdViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,14 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="第三种" id="7JF-CM-T6Z"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-110" y="1510"/>
         </scene>
         <!--第二种-->
         <scene sceneID="0rc-2j-q7i">
@@ -32,18 +36,19 @@
                     <view key="view" contentMode="scaleToFill" id="04O-HL-eA9">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="第二种" id="tSG-NA-Qj2"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bDn-pn-8lq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-8" y="799"/>
+            <point key="canvasLocation" x="-64" y="817"/>
         </scene>
         <!--第一种-->
         <scene sceneID="w3H-b9-kPn">
             <objects>
-                <viewController id="NQ7-WW-UP3" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="NQ7-WW-UP3" customClass="FirstViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="UHJ-TM-XXa"/>
                         <viewControllerLayoutGuide type="bottom" id="PhZ-Rh-Rag"/>
@@ -51,13 +56,14 @@
                     <view key="view" contentMode="scaleToFill" id="ocv-dS-eIw">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <animations/>
+                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="第一种" id="pXP-9h-lzp"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FTt-mb-EjK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-8" y="137"/>
+            <point key="canvasLocation" x="-85" y="137"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Xj2-V6-4SL">
@@ -67,11 +73,13 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" id="JX7-cB-6dg">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
                         <segue destination="NQ7-WW-UP3" kind="relationship" relationship="viewControllers" id="0FM-da-zOS"/>
                         <segue destination="RdQ-QF-yzX" kind="relationship" relationship="viewControllers" id="z0X-8n-xel"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="vJ4-iO-4DF"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xS1-jw-g5u" userLabel="First Responder" sceneMemberID="firstResponder"/>

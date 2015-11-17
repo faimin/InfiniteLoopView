@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C0AD9C4843F2A5B5697F8D2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E6725A86884E314A910BAEFE /* libPods.a */; };
 		BC827EAC1A614ECF009A1FB2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BC827EAB1A614ECF009A1FB2 /* main.m */; };
 		BC827EAF1A614ECF009A1FB2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BC827EAE1A614ECF009A1FB2 /* AppDelegate.m */; };
-		BC827EB21A614ECF009A1FB2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC827EB11A614ECF009A1FB2 /* ViewController.m */; };
+		BC827EB21A614ECF009A1FB2 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC827EB11A614ECF009A1FB2 /* FirstViewController.m */; };
 		BC827EB51A614ECF009A1FB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC827EB31A614ECF009A1FB2 /* Main.storyboard */; };
 		BC827EB71A614ECF009A1FB2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC827EB61A614ECF009A1FB2 /* Images.xcassets */; };
 		BC827EBA1A614ECF009A1FB2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC827EB81A614ECF009A1FB2 /* LaunchScreen.xib */; };
@@ -24,6 +25,9 @@
 		BC827EE21A614EE7009A1FB2 /* 8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BC827ED81A614EE7009A1FB2 /* 8.jpg */; };
 		BC827EE31A614EE7009A1FB2 /* 9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BC827ED91A614EE7009A1FB2 /* 9.jpg */; };
 		BC827EE51A616CA8009A1FB2 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BC827EE41A616CA8009A1FB2 /* 1.jpg */; };
+		BCD0ABA91BFADC3A00815393 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCD0ABA81BFADC3A00815393 /* ThirdViewController.m */; };
+		BCD0ABAD1BFAFE9700815393 /* MyCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BCD0ABAB1BFAFE9700815393 /* MyCollectionViewCell.m */; };
+		BCD0ABAE1BFAFE9700815393 /* MyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCD0ABAC1BFAFE9700815393 /* MyCollectionViewCell.xib */; };
 		BCE5493A1A626DEF00C535BC /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE549391A626DEF00C535BC /* SecondViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		BCE5493D1A626EA400C535BC /* MyImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE5493C1A626EA400C535BC /* MyImageView.m */; };
 /* End PBXBuildFile section */
@@ -39,13 +43,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6636C7961A8578536A85A5AF /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		BC827EA61A614ECF009A1FB2 /* LoopView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoopView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC827EAA1A614ECF009A1FB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC827EAB1A614ECF009A1FB2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BC827EAD1A614ECF009A1FB2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BC827EAE1A614ECF009A1FB2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		BC827EB01A614ECF009A1FB2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		BC827EB11A614ECF009A1FB2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BC827EB01A614ECF009A1FB2 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		BC827EB11A614ECF009A1FB2 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		BC827EB41A614ECF009A1FB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BC827EB61A614ECF009A1FB2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BC827EB91A614ECF009A1FB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -62,10 +67,17 @@
 		BC827ED81A614EE7009A1FB2 /* 8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 8.jpg; sourceTree = "<group>"; };
 		BC827ED91A614EE7009A1FB2 /* 9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 9.jpg; sourceTree = "<group>"; };
 		BC827EE41A616CA8009A1FB2 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		BCD0ABA71BFADC3A00815393 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		BCD0ABA81BFADC3A00815393 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		BCD0ABAA1BFAFE9700815393 /* MyCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCollectionViewCell.h; sourceTree = "<group>"; };
+		BCD0ABAB1BFAFE9700815393 /* MyCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCollectionViewCell.m; sourceTree = "<group>"; };
+		BCD0ABAC1BFAFE9700815393 /* MyCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCollectionViewCell.xib; sourceTree = "<group>"; };
 		BCE549381A626DEF00C535BC /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		BCE549391A626DEF00C535BC /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		BCE5493B1A626EA400C535BC /* MyImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyImageView.h; sourceTree = "<group>"; };
 		BCE5493C1A626EA400C535BC /* MyImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyImageView.m; sourceTree = "<group>"; };
+		BE5644DF07AE97BB7693256F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		E6725A86884E314A910BAEFE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C0AD9C4843F2A5B5697F8D2 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,12 +99,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B6EDFDE644A210FA0E0AB489 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E6725A86884E314A910BAEFE /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BC827E9D1A614ECF009A1FB2 = {
 			isa = PBXGroup;
 			children = (
 				BC827EA81A614ECF009A1FB2 /* LoopView */,
 				BC827EC21A614ECF009A1FB2 /* LoopViewTests */,
 				BC827EA71A614ECF009A1FB2 /* Products */,
+				E0264E74AB678289712626B8 /* Pods */,
+				B6EDFDE644A210FA0E0AB489 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,16 +130,12 @@
 		BC827EA81A614ECF009A1FB2 /* LoopView */ = {
 			isa = PBXGroup;
 			children = (
+				BCD0ABAF1BFB021A00815393 /* ViewController */,
+				BCD0ABB11BFB024100815393 /* View */,
+				BC827EB61A614ECF009A1FB2 /* Images.xcassets */,
 				BC827EAD1A614ECF009A1FB2 /* AppDelegate.h */,
 				BC827EAE1A614ECF009A1FB2 /* AppDelegate.m */,
-				BC827EB01A614ECF009A1FB2 /* ViewController.h */,
-				BC827EB11A614ECF009A1FB2 /* ViewController.m */,
-				BCE549381A626DEF00C535BC /* SecondViewController.h */,
-				BCE549391A626DEF00C535BC /* SecondViewController.m */,
-				BCE5493B1A626EA400C535BC /* MyImageView.h */,
-				BCE5493C1A626EA400C535BC /* MyImageView.m */,
 				BC827EB31A614ECF009A1FB2 /* Main.storyboard */,
-				BC827EB61A614ECF009A1FB2 /* Images.xcassets */,
 				BC827EB81A614ECF009A1FB2 /* LaunchScreen.xib */,
 				BC827EA91A614ECF009A1FB2 /* Supporting Files */,
 			);
@@ -167,6 +186,40 @@
 			path = Picture;
 			sourceTree = "<group>";
 		};
+		BCD0ABAF1BFB021A00815393 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BC827EB01A614ECF009A1FB2 /* FirstViewController.h */,
+				BC827EB11A614ECF009A1FB2 /* FirstViewController.m */,
+				BCE549381A626DEF00C535BC /* SecondViewController.h */,
+				BCE549391A626DEF00C535BC /* SecondViewController.m */,
+				BCD0ABA71BFADC3A00815393 /* ThirdViewController.h */,
+				BCD0ABA81BFADC3A00815393 /* ThirdViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		BCD0ABB11BFB024100815393 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BCE5493B1A626EA400C535BC /* MyImageView.h */,
+				BCE5493C1A626EA400C535BC /* MyImageView.m */,
+				BCD0ABAA1BFAFE9700815393 /* MyCollectionViewCell.h */,
+				BCD0ABAB1BFAFE9700815393 /* MyCollectionViewCell.m */,
+				BCD0ABAC1BFAFE9700815393 /* MyCollectionViewCell.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		E0264E74AB678289712626B8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6636C7961A8578536A85A5AF /* Pods.debug.xcconfig */,
+				BE5644DF07AE97BB7693256F /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -174,9 +227,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC827EC91A614ECF009A1FB2 /* Build configuration list for PBXNativeTarget "LoopView" */;
 			buildPhases = (
+				684A0A98B554186E324901A1 /* Check Pods Manifest.lock */,
 				BC827EA21A614ECF009A1FB2 /* Sources */,
 				BC827EA31A614ECF009A1FB2 /* Frameworks */,
 				BC827EA41A614ECF009A1FB2 /* Resources */,
+				C212E4A26330CA8C8DCAA575 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -211,7 +266,7 @@
 		BC827E9E1A614ECF009A1FB2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "当当";
 				TargetAttributes = {
 					BC827EA51A614ECF009A1FB2 = {
@@ -257,6 +312,7 @@
 				BC827EE01A614EE7009A1FB2 /* 6.jpg in Resources */,
 				BC827EB51A614ECF009A1FB2 /* Main.storyboard in Resources */,
 				BC827EBA1A614ECF009A1FB2 /* LaunchScreen.xib in Resources */,
+				BCD0ABAE1BFAFE9700815393 /* MyCollectionViewCell.xib in Resources */,
 				BC827EB71A614ECF009A1FB2 /* Images.xcassets in Resources */,
 				BC827EDD1A614EE7009A1FB2 /* 3.jpg in Resources */,
 				BC827EE51A616CA8009A1FB2 /* 1.jpg in Resources */,
@@ -272,14 +328,49 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		684A0A98B554186E324901A1 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C212E4A26330CA8C8DCAA575 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BC827EA21A614ECF009A1FB2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCD0ABAD1BFAFE9700815393 /* MyCollectionViewCell.m in Sources */,
 				BCE5493A1A626DEF00C535BC /* SecondViewController.m in Sources */,
 				BCE5493D1A626EA400C535BC /* MyImageView.m in Sources */,
-				BC827EB21A614ECF009A1FB2 /* ViewController.m in Sources */,
+				BCD0ABA91BFADC3A00815393 /* ThirdViewController.m in Sources */,
+				BC827EB21A614ECF009A1FB2 /* FirstViewController.m in Sources */,
 				BC827EAF1A614ECF009A1FB2 /* AppDelegate.m in Sources */,
 				BC827EAC1A614ECF009A1FB2 /* main.m in Sources */,
 			);
@@ -343,6 +434,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -357,7 +449,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -393,7 +485,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -403,20 +495,34 @@
 		};
 		BC827ECA1A614ECF009A1FB2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6636C7961A8578536A85A5AF /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LoopView",
+				);
 				INFOPLIST_FILE = LoopView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dangdang.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
 		BC827ECB1A614ECF009A1FB2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE5644DF07AE97BB7693256F /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LoopView",
+				);
 				INFOPLIST_FILE = LoopView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dangdang.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -435,6 +541,7 @@
 				);
 				INFOPLIST_FILE = LoopViewTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dangdang.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LoopView.app/LoopView";
 			};
@@ -450,6 +557,7 @@
 				);
 				INFOPLIST_FILE = LoopViewTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dangdang.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LoopView.app/LoopView";
 			};
