@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5C0AD9C4843F2A5B5697F8D2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E6725A86884E314A910BAEFE /* libPods.a */; };
+		BC77C0481C4755DA00C15349 /* FourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC77C0471C4755DA00C15349 /* FourViewController.m */; };
+		BC77C0501C476B4E00C15349 /* SourceController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC77C04F1C476B4E00C15349 /* SourceController.m */; };
 		BC827EAC1A614ECF009A1FB2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BC827EAB1A614ECF009A1FB2 /* main.m */; };
 		BC827EAF1A614ECF009A1FB2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BC827EAE1A614ECF009A1FB2 /* AppDelegate.m */; };
 		BC827EB21A614ECF009A1FB2 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC827EB11A614ECF009A1FB2 /* FirstViewController.m */; };
@@ -44,6 +46,10 @@
 
 /* Begin PBXFileReference section */
 		6636C7961A8578536A85A5AF /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		BC77C0461C4755DA00C15349 /* FourViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourViewController.h; sourceTree = "<group>"; };
+		BC77C0471C4755DA00C15349 /* FourViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourViewController.m; sourceTree = "<group>"; };
+		BC77C04E1C476B4E00C15349 /* SourceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SourceController.h; sourceTree = "<group>"; };
+		BC77C04F1C476B4E00C15349 /* SourceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SourceController.m; sourceTree = "<group>"; };
 		BC827EA61A614ECF009A1FB2 /* LoopView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoopView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC827EAA1A614ECF009A1FB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC827EAB1A614ECF009A1FB2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -107,6 +113,53 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BC77C0491C476AA700C15349 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				BC827EAD1A614ECF009A1FB2 /* AppDelegate.h */,
+				BC827EAE1A614ECF009A1FB2 /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		BC77C04A1C476AD400C15349 /* Four */ = {
+			isa = PBXGroup;
+			children = (
+				BC77C0461C4755DA00C15349 /* FourViewController.h */,
+				BC77C0471C4755DA00C15349 /* FourViewController.m */,
+				BC77C04E1C476B4E00C15349 /* SourceController.h */,
+				BC77C04F1C476B4E00C15349 /* SourceController.m */,
+			);
+			name = Four;
+			sourceTree = "<group>";
+		};
+		BC77C04B1C476AD700C15349 /* Third */ = {
+			isa = PBXGroup;
+			children = (
+				BCD0ABA71BFADC3A00815393 /* ThirdViewController.h */,
+				BCD0ABA81BFADC3A00815393 /* ThirdViewController.m */,
+			);
+			name = Third;
+			sourceTree = "<group>";
+		};
+		BC77C04C1C476ADA00C15349 /* Second */ = {
+			isa = PBXGroup;
+			children = (
+				BCE549381A626DEF00C535BC /* SecondViewController.h */,
+				BCE549391A626DEF00C535BC /* SecondViewController.m */,
+			);
+			name = Second;
+			sourceTree = "<group>";
+		};
+		BC77C04D1C476ADC00C15349 /* First */ = {
+			isa = PBXGroup;
+			children = (
+				BC827EB01A614ECF009A1FB2 /* FirstViewController.h */,
+				BC827EB11A614ECF009A1FB2 /* FirstViewController.m */,
+			);
+			name = First;
+			sourceTree = "<group>";
+		};
 		BC827E9D1A614ECF009A1FB2 = {
 			isa = PBXGroup;
 			children = (
@@ -130,11 +183,10 @@
 		BC827EA81A614ECF009A1FB2 /* LoopView */ = {
 			isa = PBXGroup;
 			children = (
+				BC77C0491C476AA700C15349 /* AppDelegate */,
 				BCD0ABAF1BFB021A00815393 /* ViewController */,
 				BCD0ABB11BFB024100815393 /* View */,
 				BC827EB61A614ECF009A1FB2 /* Images.xcassets */,
-				BC827EAD1A614ECF009A1FB2 /* AppDelegate.h */,
-				BC827EAE1A614ECF009A1FB2 /* AppDelegate.m */,
 				BC827EB31A614ECF009A1FB2 /* Main.storyboard */,
 				BC827EB81A614ECF009A1FB2 /* LaunchScreen.xib */,
 				BC827EA91A614ECF009A1FB2 /* Supporting Files */,
@@ -189,12 +241,10 @@
 		BCD0ABAF1BFB021A00815393 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				BC827EB01A614ECF009A1FB2 /* FirstViewController.h */,
-				BC827EB11A614ECF009A1FB2 /* FirstViewController.m */,
-				BCE549381A626DEF00C535BC /* SecondViewController.h */,
-				BCE549391A626DEF00C535BC /* SecondViewController.m */,
-				BCD0ABA71BFADC3A00815393 /* ThirdViewController.h */,
-				BCD0ABA81BFADC3A00815393 /* ThirdViewController.m */,
+				BC77C04D1C476ADC00C15349 /* First */,
+				BC77C04C1C476ADA00C15349 /* Second */,
+				BC77C04B1C476AD700C15349 /* Third */,
+				BC77C04A1C476AD400C15349 /* Four */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -368,6 +418,8 @@
 			files = (
 				BCD0ABAD1BFAFE9700815393 /* MyCollectionViewCell.m in Sources */,
 				BCE5493A1A626DEF00C535BC /* SecondViewController.m in Sources */,
+				BC77C0481C4755DA00C15349 /* FourViewController.m in Sources */,
+				BC77C0501C476B4E00C15349 /* SourceController.m in Sources */,
 				BCE5493D1A626EA400C535BC /* MyImageView.m in Sources */,
 				BCD0ABA91BFADC3A00815393 /* ThirdViewController.m in Sources */,
 				BC827EB21A614ECF009A1FB2 /* FirstViewController.m in Sources */,
