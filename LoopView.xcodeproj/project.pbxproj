@@ -30,7 +30,7 @@
 		BCD0ABA91BFADC3A00815393 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCD0ABA81BFADC3A00815393 /* ThirdViewController.m */; };
 		BCD0ABAD1BFAFE9700815393 /* MyCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BCD0ABAB1BFAFE9700815393 /* MyCollectionViewCell.m */; };
 		BCD0ABAE1BFAFE9700815393 /* MyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCD0ABAC1BFAFE9700815393 /* MyCollectionViewCell.xib */; };
-		BCE5493A1A626DEF00C535BC /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE549391A626DEF00C535BC /* SecondViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		BCE5493A1A626DEF00C535BC /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE549391A626DEF00C535BC /* SecondViewController.m */; };
 		BCE5493D1A626EA400C535BC /* MyImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE5493C1A626EA400C535BC /* MyImageView.m */; };
 /* End PBXBuildFile section */
 

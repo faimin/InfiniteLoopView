@@ -24,11 +24,11 @@
 	int lastPage;
 }
 
-@property (nonatomic, retain) NSMutableDictionary *visiblePages;
+@property (nonatomic, strong) NSMutableDictionary *visiblePages;
 
-@property (nonatomic, retain) NSMutableSet *recyledPages;
+@property (nonatomic, strong) NSMutableSet *recyledPages;
 
-@property (nonatomic, retain) NSMutableArray *imageArray;
+@property (nonatomic, strong) NSMutableArray *imageArray;
 
 @end
 
@@ -64,7 +64,6 @@
 	myScrollView.pagingEnabled = YES;
 	myScrollView.userInteractionEnabled = YES;
 	[self.view addSubview:myScrollView];
-	[myScrollView release];
 
 	self.visiblePages = [[NSMutableDictionary alloc] init];
 	self.recyledPages = [[NSMutableSet alloc] init];
@@ -75,7 +74,6 @@
 	pageControl.currentPageIndicatorTintColor = [UIColor redColor];
 	pageControl.pageIndicatorTintColor = [UIColor purpleColor];
 	[self.view addSubview:pageControl];
-	[pageControl release];
 
 	lastPage = 0; //上一页
 
@@ -93,13 +91,11 @@
 		firstImageView.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
 		[myScrollView addSubview:firstImageView];
 		[self.visiblePages setValue:firstImageView forKey:[NSString stringWithFormat:@"%i.jpg", 0]];
-		[firstImageView release];
 
 		MyImageView *secondImageView = [[MyImageView alloc] initWithImage:[self.imageArray objectAtIndex:1]];
 		secondImageView.frame = CGRectMake(SCREEN_WIDTH, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
 		[myScrollView addSubview:secondImageView];
 		[self.visiblePages setValue:secondImageView forKey:[NSString stringWithFormat:@"%i.jpg", 1]];
-		[secondImageView release];
 	}
 	else {
 		if (currentPage == lastPage) { //没滑过去（没滑到其他页）的时候返回
@@ -113,7 +109,7 @@
 				MyImageView *imageView = [self getRecyledImageView:image];
 
 				if (!imageView) {
-					imageView = [[[MyImageView alloc] initWithImage:image] autorelease];
+					imageView = [[MyImageView alloc] initWithImage:image];
 				}
 				imageView.frame = CGRectMake((currentPage + 1) * SCREEN_WIDTH, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
 				[myScrollView addSubview:imageView];
@@ -136,7 +132,7 @@
 				MyImageView *imageView = [self getRecyledImageView:image];
 
 				if (!imageView) {
-					imageView = [[[MyImageView alloc] initWithImage:image] autorelease];
+					imageView = [[MyImageView alloc] initWithImage:image];
 				}
 				imageView.frame = CGRectMake((currentPage - 1) * SCREEN_WIDTH, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
 				[myScrollView addSubview:imageView];
@@ -162,9 +158,7 @@
 - (MyImageView *)getRecyledImageView:(UIImage *)image
 {
 	MyImageView *imageView = [self.recyledPages anyObject];
-
 	if (imageView) {
-		[[imageView retain] autorelease];
 		imageView.image = image;
 		[self.recyledPages removeObject:imageView];
 	}
@@ -178,26 +172,12 @@
 
 - (void)didReceiveMemoryWarning
 {
-	[_visiblePages release];
-	[_recyledPages release];
-	[_imageArray release];
 	[super didReceiveMemoryWarning];
-}
-
-- (void)viewDidUnload
-{
-	[super viewDidUnload];
-	self.visiblePages = nil;
-	self.recyledPages = nil;
-	self.imageArray = nil;
 }
 
 - (void)dealloc
 {
-	[_visiblePages release];
-	[_recyledPages release];
-	[_imageArray release];
-	[super dealloc];
+    NSLog(@"释放了");
 }
 
 /*
