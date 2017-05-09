@@ -14,6 +14,7 @@
 
 #import "ThirdViewController.h"
 #import "MyCollectionViewCell.h"
+#import "ZDCycleScrollView.h"
 
 #define kSCREEN_WIDTH	[[UIScreen mainScreen] bounds].size.width
 #define kSCREEN_HEIGHT	[[UIScreen mainScreen] bounds].size.height
@@ -36,28 +37,42 @@
 	[super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-	self.myCollectionView = ({
-		UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
-		flowLayout.minimumInteritemSpacing = 0;
-		flowLayout.minimumLineSpacing = 0;
-		flowLayout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
-		flowLayout.itemSize = (CGSize) {kSCREEN_WIDTH, kSCREEN_HEIGHT};
+    //[self setup];
+    [self config];
+}
 
-		UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:(CGRect) {0, 0, kSCREEN_WIDTH, kSCREEN_HEIGHT}collectionViewLayout:flowLayout];
-		collectionView.showsHorizontalScrollIndicator = NO;
-		collectionView.showsVerticalScrollIndicator = NO;
-		collectionView.backgroundColor = [UIColor orangeColor];
-		collectionView.pagingEnabled = YES;
-		collectionView.delegate = self;
-		collectionView.dataSource = self;
-		[collectionView registerNib:[UINib nibWithNibName:@"MyCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:NSStringFromClass([MyCollectionViewCell class])];
+- (void)config {
+    ZDCycleScrollView *cycleScrollView = [[ZDCycleScrollView alloc] initWithFrame:self.view.bounds];
+    cycleScrollView.backgroundColor = [UIColor cyanColor];
+    [self.view addSubview:cycleScrollView];
+    
+    cycleScrollView.images = [self dataArray];
+}
+
+- (void)setup {
+    self.myCollectionView = ({
+        UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
+        flowLayout.minimumInteritemSpacing = 0;
+        flowLayout.minimumLineSpacing = 0;
+        flowLayout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
+        flowLayout.itemSize = (CGSize) {kSCREEN_WIDTH, kSCREEN_HEIGHT};
+        
+        UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:(CGRect) {0, 0, kSCREEN_WIDTH, kSCREEN_HEIGHT}collectionViewLayout:flowLayout];
+        collectionView.showsHorizontalScrollIndicator = NO;
+        collectionView.showsVerticalScrollIndicator = NO;
+        collectionView.backgroundColor = [UIColor orangeColor];
+        collectionView.pagingEnabled = YES;
+        collectionView.delegate = self;
+        collectionView.dataSource = self;
+        [collectionView registerNib:[UINib nibWithNibName:@"MyCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:NSStringFromClass([MyCollectionViewCell class])];
         //MARK:显示第二张图片,因为在源数据中数组前后分别添加了最后一张和第一张,原理和前2种大同小异
         collectionView.contentOffset = CGPointMake(collectionView.bounds.size.width, 0);
         
-		collectionView;
-	});
+        collectionView;
+    });
     
     [self.view addSubview:self.myCollectionView];
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -119,7 +134,7 @@
 {
     if (!_dataArray) {
         _dataArray = [[NSMutableArray alloc] init];
-        for (int i = 1; i <= IMAGE_COUNT; i++) {
+        for (int i = 0; i < IMAGE_COUNT; i++) {
             NSString *fileName = [NSString stringWithFormat:@"%i.jpg", i];
             UIImage *image = [UIImage imageNamed:fileName];
             if (nil != image) {
@@ -129,8 +144,8 @@
                 NSLog(@"image is nil");
             }
         }
-        [_dataArray insertObject:[UIImage imageNamed:[NSString stringWithFormat:@"%ld.jpg", (NSUInteger)IMAGE_COUNT]] atIndex:0];
-        [_dataArray addObject:[UIImage imageNamed:[NSString stringWithFormat:@"%d.jpg", 1]]];
+//        [_dataArray insertObject:[UIImage imageNamed:[NSString stringWithFormat:@"%zd.jpg", IMAGE_COUNT - 1]] atIndex:0];
+//        [_dataArray addObject:[UIImage imageNamed:[NSString stringWithFormat:@"%zd.jpg", 0]]];
         
         return _dataArray;
     }

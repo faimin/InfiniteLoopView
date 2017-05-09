@@ -32,6 +32,8 @@
 		BCD0ABAE1BFAFE9700815393 /* MyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCD0ABAC1BFAFE9700815393 /* MyCollectionViewCell.xib */; };
 		BCE5493A1A626DEF00C535BC /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE549391A626DEF00C535BC /* SecondViewController.m */; };
 		BCE5493D1A626EA400C535BC /* MyImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE5493C1A626EA400C535BC /* MyImageView.m */; };
+		FA3BDAA51EC1D90900A91827 /* ZDImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3BDAA21EC1D90900A91827 /* ZDImageCollectionViewCell.m */; };
+		FA3BDAA61EC1D90900A91827 /* ZDCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3BDAA41EC1D90900A91827 /* ZDCycleScrollView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +86,10 @@
 		BCE5493C1A626EA400C535BC /* MyImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyImageView.m; sourceTree = "<group>"; };
 		BE5644DF07AE97BB7693256F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		E6725A86884E314A910BAEFE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA3BDAA11EC1D90900A91827 /* ZDImageCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDImageCollectionViewCell.h; sourceTree = "<group>"; };
+		FA3BDAA21EC1D90900A91827 /* ZDImageCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDImageCollectionViewCell.m; sourceTree = "<group>"; };
+		FA3BDAA31EC1D90900A91827 /* ZDCycleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDCycleScrollView.h; sourceTree = "<group>"; };
+		FA3BDAA41EC1D90900A91827 /* ZDCycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDCycleScrollView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -257,6 +263,10 @@
 				BCD0ABAA1BFAFE9700815393 /* MyCollectionViewCell.h */,
 				BCD0ABAB1BFAFE9700815393 /* MyCollectionViewCell.m */,
 				BCD0ABAC1BFAFE9700815393 /* MyCollectionViewCell.xib */,
+				FA3BDAA11EC1D90900A91827 /* ZDImageCollectionViewCell.h */,
+				FA3BDAA21EC1D90900A91827 /* ZDImageCollectionViewCell.m */,
+				FA3BDAA31EC1D90900A91827 /* ZDCycleScrollView.h */,
+				FA3BDAA41EC1D90900A91827 /* ZDCycleScrollView.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -316,7 +326,7 @@
 		BC827E9E1A614ECF009A1FB2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0710;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "当当";
 				TargetAttributes = {
 					BC827EA51A614ECF009A1FB2 = {
@@ -424,6 +434,8 @@
 				BCD0ABA91BFADC3A00815393 /* ThirdViewController.m in Sources */,
 				BC827EB21A614ECF009A1FB2 /* FirstViewController.m in Sources */,
 				BC827EAF1A614ECF009A1FB2 /* AppDelegate.m in Sources */,
+				FA3BDAA51EC1D90900A91827 /* ZDImageCollectionViewCell.m in Sources */,
+				FA3BDAA61EC1D90900A91827 /* ZDCycleScrollView.m in Sources */,
 				BC827EAC1A614ECF009A1FB2 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -479,8 +491,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -489,6 +503,7 @@
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -522,8 +537,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -531,6 +548,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
